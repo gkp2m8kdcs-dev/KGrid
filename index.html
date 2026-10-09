@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGrid — Personal Finance Journal</title>
+    <meta name="description" content="KGrid is a private, on-device personal finance journal. Track net worth, investments, budgets, goals, and receipts — all stored locally on your iPhone.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+            color: #1a1a2e;
+            line-height: 1.6;
+            background: #fafbfc;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            padding: 80px 0 60px;
+            text-align: center;
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d3561 100%);
+            color: #ffffff;
+        }
+
+        header h1 {
+            font-size: 56px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+        }
+
+        header .tagline {
+            font-size: 20px;
+            color: #c5cae9;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        main {
+            padding: 64px 0;
+        }
+
+        section {
+            margin-bottom: 64px;
+        }
+
+        section h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1a1a2e;
+        }
+
+        section p {
+            font-size: 17px;
+            color: #4a4a68;
+            margin-bottom: 16px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .feature {
+            background: #ffffff;
+            border: 1px solid #e8eaf0;
+            border-radius: 16px;
+            padding: 28px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(26, 26, 46, 0.08);
+        }
+
+        .feature h3 {
+            font-size: 19px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+
+        .feature p {
+            font-size: 15px;
+            color: #6a6a85;
+            margin: 0;
+        }
+
+        .privacy-box {
+            background: linear-gradient(135deg, #f5f7ff 0%, #e8eaf6 100%);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .privacy-box h2 {
+            margin-bottom: 12px;
+        }
+
+        .privacy-box p {
+            max-width: 640px;
+            margin: 0 auto;
+            color: #4a4a68;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #c5cae9;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #8c9eff;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 40px;
+            }
+            header .tagline {
+                font-size: 17px;
+            }
+            section h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>KGrid</h1>
+            <p class="tagline">Your private, on-device personal finance journal. Net worth, investments, budgets, and goals — all in one place, all stored locally.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>See the full picture of your money</h2>
+                <p>KGrid is a finance journal for people who want clarity without giving a third party their bank credentials. Every account, transaction, holding, budget, goal, and receipt lives in a local file inside the app sandbox. Nothing is uploaded, nothing is synced, nothing leaves your iPhone.</p>
+            </section>
+
+            <section>
+                <h2>What you can do</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3>Net Worth Dashboard</h3>
+                        <p>A single card that shows total assets, investments, and debt, followed by month-to-date income, expense, savings, and savings rate — each with a twelve-month trend sparkline.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Portfolio Journal</h3>
+                        <p>Track stocks, ETFs, bonds, mutual funds, REITs, and crypto with manual cost basis, average cost, unrealized P&amp;L, and per-holding return. KGrid computes returns from the numbers you enter.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Budgets</h3>
+                        <p>Group categories, set monthly limits, and watch a real-time progress ring warn you before you overspend.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Savings Goals</h3>
+                        <p>Turn targets like an emergency fund or a down payment into a live progress story with days remaining and the monthly contribution required.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Receipts</h3>
+                        <p>Capture or import photos of invoices and attach them to the corresponding transaction for a clean audit trail.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Reports</h3>
+                        <p>A multi-range income-versus-expense bar chart, a daily net-flow line chart, a category donut, and a 12-week spending heatmap you can scrub to spot patterns.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="privacy-box">
+                <h2>Privacy first. Always.</h2>
+                <p>KGrid is designed as a journal, tracker, and analyzer — never a trading platform, never a brokerage, never a source of investment advice. It never fetches live market quotes and never asks for a brokerage login. Your financial data stays on your device, where it belongs.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 KGrid. All rights reserved.</p>
+            <p style="margin-top: 12px;">
+                <a href="privacy.html">Privacy Policy</a> &middot;
+                <a href="support.html">Support</a> &middot;
+                <a href="terms.html">Terms of Use</a>
+            </p>
+            <p style="margin-top: 12px; color: #6a6a8a;">Contact: <a href="mailto:chekinaekaterina093@gmail.com">chekinaekaterina093@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
